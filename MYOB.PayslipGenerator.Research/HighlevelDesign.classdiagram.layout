@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 17.375, 8.5" name="HighlevelDesign">
+  <logicalClassDesignerModelMoniker Id="ea02ce5a-6111-477e-87e4-f2d53ef97132" />
+  <nestedChildShapes>
+    <classShape Id="24161005-594c-4de0-be36-2523ea805fb7" absoluteBounds="6, 6, 6, 1.0624999801317854" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="05cc4b7c-b251-4dcd-b7f0-4fafb1246956" LastKnownName="MYOB.PayslipGenerator.XmlUtilities.EmployeeXmlReader" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="b1c748e8-1d39-4d72-aa8e-d6c3cd266528" absoluteBounds="6.015, 6.39, 5.9700000000000006, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="31db4c0d-59f7-42f4-b6c9-bd9ddc21d4e4" absoluteBounds="6.015, 6.60117186754942, 5.9700000000000006, 0.36132811258236563" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="1cd57d0a-4b37-46f3-8952-0c6c545f4b0c" absoluteBounds="6.625, 2.75, 5.625, 1.0624999801317849" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="d314d9e5-3cb3-45e6-87b1-f15093ed334e" LastKnownName="MYOB.PayslipGenerator.BusinessLogic.EmployeeService" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="07f95fcc-3c84-4469-84f4-1c30f5683769" absoluteBounds="6.64, 3.1400000000000006, 5.5950000000000006, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="5c3df83a-9ce5-40a0-9b47-715efa30baef" absoluteBounds="6.64, 3.3511718675494198, 5.5950000000000006, 0.36132811258236563" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <interfaceShape Id="c5537eb6-c346-453a-a250-777490405b69" absoluteBounds="7.375, 4.375, 5.25, 1.2226562251647311" hideQualifiedName="false" increaseHeight="0" customColor="207, 223, 191">
+      <interfaceMoniker Id="25b16d8e-6535-4396-b413-f6c3c3f7a27a" LastKnownName="MYOB.PayslipGenerator.XmlUtilities.IEmployeeXmlReader" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="d1573165-c444-4917-8ff2-2e0d64c7a962" absoluteBounds="7.39, 4.765, 5.2200000000000006, 0.36132811258236563" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="2e49e60d-9142-4af4-9af2-ed4aedb1efb2" absoluteBounds="7.39, 5.1363281125823654, 5.2200000000000006, 0.36132811258236575" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </interfaceShape>
+    <realizationConnector edgePoints="[(9 : 6); (9 : 5.83765622516473); (10 : 5.83765622516473); (10 : 5.59765622516473)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" showAsLollipop="false">
+      <interfaceRealizationMoniker Id="7af9ab19-9219-4f76-b95a-bc9d359930c6" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="24161005-594c-4de0-be36-2523ea805fb7" />
+        <interfaceShapeMoniker Id="c5537eb6-c346-453a-a250-777490405b69" />
+      </nodes>
+    </realizationConnector>
+    <classShape Id="99b10ada-41a1-4153-bcda-092d86bdb1cf" absoluteBounds="13.125, 2.875, 4, 1.7031249602635699" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="623f3f31-bd39-4e28-bb38-20faa8bf6543" LastKnownName="MYOB.PayslipGenerator.DomainModel.Employee" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="9be9e3f4-a218-4ea8-8bc2-21f1cf45a745" absoluteBounds="13.14, 3.2649999999999997, 3.9699999999999998, 1.0019530927141507" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="c726e74c-423e-4f0c-9853-51ec19be0754" absoluteBounds="13.14, 4.2769530927141508, 3.9699999999999998, 0.20117186754941963" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <interfaceShape Id="7492cdab-8d7a-4fce-9258-3ffae803d052" absoluteBounds="8.125, 0.875, 4.625, 1.0624999801317849" hideQualifiedName="false" increaseHeight="0" customColor="207, 223, 191">
+      <interfaceMoniker Id="08760aa0-679c-4796-b091-bc223db8fb7d" LastKnownName="MYOB.PayslipGenerator.BusinessLogic.IEmployeeService" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="5c924a96-9b97-4cc3-8c08-d91cfe771c3a" absoluteBounds="8.14, 1.2650000000000001, 4.5950000000000006, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="595b9a81-c246-486c-ba00-219695af890d" absoluteBounds="8.14, 1.4761718675494193, 4.5950000000000006, 0.36132811258236563" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </interfaceShape>
+    <realizationConnector edgePoints="[(9.4375 : 2.75); (9.4375 : 2.31249998013178); (10.4375 : 2.31249998013178); (10.4375 : 1.93749998013178)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" showAsLollipop="false">
+      <interfaceRealizationMoniker Id="922a1430-4a0c-4873-8d32-f781277782c9" />
+      <relativeChildShapes />
+      <nodes>
+        <classShapeMoniker Id="1cd57d0a-4b37-46f3-8952-0c6c545f4b0c" />
+        <interfaceShapeMoniker Id="7492cdab-8d7a-4fce-9258-3ffae803d052" />
+      </nodes>
+    </realizationConnector>
+    <classShape Id="ac78ac25-1b69-4590-acd0-cadad47003c6" absoluteBounds="1.125, 4.75, 4.625, 1.0624999801317854" hideQualifiedName="false" increaseHeight="0" customColor="181, 193, 223">
+      <classMoniker Id="31415a3e-342a-4771-8dfd-ca8ed683d1fb" LastKnownName="MYOB.PayslipGenerator.BusinessLogic.EmployeeViewModel" />
+      <nestedChildShapes>
+        <AttributeElementListCompartment Id="eeec18cb-00c8-4fa5-9d4c-62fd0f447c37" absoluteBounds="1.14, 5.14, 4.5950000000000006, 0.2011718675494194" name="AttributesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <OperationElementListCompartment Id="b6651ea0-4ceb-4542-910f-ffb5ca5c5317" absoluteBounds="1.14, 5.35117186754942, 4.5950000000000006, 0.36132811258236563" name="OperationsCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</logicalClassDesignerDiagram>

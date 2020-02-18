@@ -1,0 +1,89 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.40629.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MYOB.PayslipGenerator.BusinessLogic", "MYOB.PayslipGenerator.BusinessLogic\MYOB.PayslipGenerator.BusinessLogic.csproj", "{411ABB2A-C3C2-4FAD-BC76-A0587EA147E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MYOB.PayslipGenerator.DomainModel", "MYOB.PayslipGenerator.DomainModel\MYOB.PayslipGenerator.DomainModel.csproj", "{636CDB3C-D5E1-4C9C-83EB-39AA28AF52EF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Business", "Business", "{455CE352-5EFC-4563-8081-01A815F124C3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DataAccess", "DataAccess", "{F9CD9D8F-AB38-4DFC-B41E-CD6A62E541FF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UserInterface", "UserInterface", "{CC88C77A-A62D-41EB-B941-1878641B1406}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Utilities", "Utilities", "{C2B60000-0C30-46F2-806B-A9602F7CF98E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MYOB.PayslipGenerator.Utilities", "MYOB.PayslipGenerator.Utilities\MYOB.PayslipGenerator.Utilities.csproj", "{24C86AE9-764C-4B21-A29E-15520665B07F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MYOB.PayslipGenerator.XmlUtilities", "MYOB.PayslipGenerator.XmlUtilities\MYOB.PayslipGenerator.XmlUtilities.csproj", "{D5FE1C46-DB9D-41C9-B9FD-430FE778D62F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MYOB.PayslipGenerator.UserInterface", "MYOB.PayslipGenerator.UserInterface\MYOB.PayslipGenerator.UserInterface.csproj", "{F00AFE4A-CEA9-4C95-8242-910298E4B827}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MYOB.PayslipGenerator.Repository", "MYOB.PayslipGenerator.Repository\MYOB.PayslipGenerator.Repository.csproj", "{6C537B41-5813-4FFD-B23B-2C1C10A3CA20}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MYOB.PayslipGenerator.BusinessLogic.Tests", "MYOB.PayslipGenerator.BusinessLogic.Tests\MYOB.PayslipGenerator.BusinessLogic.Tests.csproj", "{8BECA9F9-3DFC-44C0-B50F-CE20F9C2F778}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MYOB.PayslipGenerator.UserInterface.Tests", "MYOB.PayslipGenerator.UserInterface.Tests\MYOB.PayslipGenerator.UserInterface.Tests.csproj", "{7FD01722-FCAD-43DA-B172-7A71D594202C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MYOB.PayslipGenerator.Repository.Tests", "MYOB.PayslipGenerator.Repository.Tests\MYOB.PayslipGenerator.Repository.Tests.csproj", "{A0CA4A1E-EE9A-4C83-BE1F-649C839B66AB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{411ABB2A-C3C2-4FAD-BC76-A0587EA147E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{411ABB2A-C3C2-4FAD-BC76-A0587EA147E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{411ABB2A-C3C2-4FAD-BC76-A0587EA147E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{411ABB2A-C3C2-4FAD-BC76-A0587EA147E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{636CDB3C-D5E1-4C9C-83EB-39AA28AF52EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{636CDB3C-D5E1-4C9C-83EB-39AA28AF52EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{636CDB3C-D5E1-4C9C-83EB-39AA28AF52EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{636CDB3C-D5E1-4C9C-83EB-39AA28AF52EF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24C86AE9-764C-4B21-A29E-15520665B07F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24C86AE9-764C-4B21-A29E-15520665B07F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24C86AE9-764C-4B21-A29E-15520665B07F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24C86AE9-764C-4B21-A29E-15520665B07F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5FE1C46-DB9D-41C9-B9FD-430FE778D62F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5FE1C46-DB9D-41C9-B9FD-430FE778D62F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5FE1C46-DB9D-41C9-B9FD-430FE778D62F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5FE1C46-DB9D-41C9-B9FD-430FE778D62F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F00AFE4A-CEA9-4C95-8242-910298E4B827}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F00AFE4A-CEA9-4C95-8242-910298E4B827}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F00AFE4A-CEA9-4C95-8242-910298E4B827}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F00AFE4A-CEA9-4C95-8242-910298E4B827}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C537B41-5813-4FFD-B23B-2C1C10A3CA20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C537B41-5813-4FFD-B23B-2C1C10A3CA20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C537B41-5813-4FFD-B23B-2C1C10A3CA20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C537B41-5813-4FFD-B23B-2C1C10A3CA20}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BECA9F9-3DFC-44C0-B50F-CE20F9C2F778}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BECA9F9-3DFC-44C0-B50F-CE20F9C2F778}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BECA9F9-3DFC-44C0-B50F-CE20F9C2F778}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BECA9F9-3DFC-44C0-B50F-CE20F9C2F778}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7FD01722-FCAD-43DA-B172-7A71D594202C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FD01722-FCAD-43DA-B172-7A71D594202C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FD01722-FCAD-43DA-B172-7A71D594202C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FD01722-FCAD-43DA-B172-7A71D594202C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0CA4A1E-EE9A-4C83-BE1F-649C839B66AB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0CA4A1E-EE9A-4C83-BE1F-649C839B66AB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0CA4A1E-EE9A-4C83-BE1F-649C839B66AB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0CA4A1E-EE9A-4C83-BE1F-649C839B66AB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{411ABB2A-C3C2-4FAD-BC76-A0587EA147E5} = {455CE352-5EFC-4563-8081-01A815F124C3}
+		{636CDB3C-D5E1-4C9C-83EB-39AA28AF52EF} = {455CE352-5EFC-4563-8081-01A815F124C3}
+		{24C86AE9-764C-4B21-A29E-15520665B07F} = {C2B60000-0C30-46F2-806B-A9602F7CF98E}
+		{D5FE1C46-DB9D-41C9-B9FD-430FE778D62F} = {C2B60000-0C30-46F2-806B-A9602F7CF98E}
+		{F00AFE4A-CEA9-4C95-8242-910298E4B827} = {CC88C77A-A62D-41EB-B941-1878641B1406}
+		{6C537B41-5813-4FFD-B23B-2C1C10A3CA20} = {F9CD9D8F-AB38-4DFC-B41E-CD6A62E541FF}
+		{8BECA9F9-3DFC-44C0-B50F-CE20F9C2F778} = {455CE352-5EFC-4563-8081-01A815F124C3}
+		{7FD01722-FCAD-43DA-B172-7A71D594202C} = {CC88C77A-A62D-41EB-B941-1878641B1406}
+		{A0CA4A1E-EE9A-4C83-BE1F-649C839B66AB} = {F9CD9D8F-AB38-4DFC-B41E-CD6A62E541FF}
+	EndGlobalSection
+EndGlobal

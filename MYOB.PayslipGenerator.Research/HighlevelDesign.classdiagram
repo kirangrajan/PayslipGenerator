@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="ea02ce5a-6111-477e-87e4-f2d53ef97132" name="HighlevelDesign" linkedPackageId="9e844c6d-0f32-4180-a027-2d7bbd943400" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="a1b74f38-d917-42af-aa56-248f9b32ef41">
+      <profileInstance Id="b6d20f06-0d76-4245-b484-9c8162417c26" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="1863cbf6-0323-467f-a28b-7d80a62454d3">
+      <profileInstance Id="18ea4cf0-348f-437d-982d-e370084b5810" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="05cc4b7c-b251-4dcd-b7f0-4fafb1246956" name="MYOB.PayslipGenerator.XmlUtilities.EmployeeXmlReader" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f4840806-c104-405e-a817-60c3d7f13b3b" />
+        <suppliersInternal>
+          <interfaceRealization Id="7af9ab19-9219-4f76-b95a-bc9d359930c6">
+            <interfaceMoniker Id="25b16d8e-6535-4396-b413-f6c3c3f7a27a" LastKnownName="MYOB.PayslipGenerator.XmlUtilities.IEmployeeXmlReader" />
+            <elementDefinition Id="ef0e2117-2305-4516-982d-85612600599e" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="3cdae896-fa62-402d-b333-479283c5474d" name="ReadAndParseEmployeeData" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="016a63f6-d059-4d31-9ddd-42fc8a2f9645" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="fe79e5e9-dc5e-4bfc-9dcc-25c424367114" direction="Return" isUnique="false">
+                  <elementDefinition Id="14d38a9f-000e-4e87-b034-4f8c4c805976" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="76fc2f33-8305-4c59-866c-f214cf94aebb" LastKnownName="IList&lt;MYOB.PayslipGenerator.DomainModel.Employee&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d314d9e5-3cb3-45e6-87b1-f15093ed334e" name="MYOB.PayslipGenerator.BusinessLogic.EmployeeService" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="5add4836-20b0-4031-8ac3-20f81577ab85" />
+        <suppliersInternal>
+          <interfaceRealization Id="922a1430-4a0c-4873-8d32-f781277782c9">
+            <interfaceMoniker Id="08760aa0-679c-4796-b091-bc223db8fb7d" LastKnownName="MYOB.PayslipGenerator.BusinessLogic.IEmployeeService" />
+            <elementDefinition Id="ce1fdda3-3b89-467f-80de-46a33dfd9da7" />
+          </interfaceRealization>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation Id="49235abd-f6bf-48f0-add3-db3525c59228" name="GetEmployees" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="64b969d6-f34d-4586-9289-c644f39d9597" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9dfc3ff9-1c15-4742-8ccd-78abc332e51b" direction="Return" isUnique="false">
+                  <elementDefinition Id="69b18b9f-ad78-456d-82d8-5b6273e95906" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="76fc2f33-8305-4c59-866c-f214cf94aebb" LastKnownName="IList&lt;MYOB.PayslipGenerator.DomainModel.Employee&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="25b16d8e-6535-4396-b413-f6c3c3f7a27a" name="MYOB.PayslipGenerator.XmlUtilities.IEmployeeXmlReader" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="8c7ddc32-5485-4161-9918-a594844a9348" />
+        <ownedAttributes>
+          <property Id="33d01439-a20a-45af-b500-8cdda3d0427d" name="ErrorMessage" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a40f13ad-a641-4e04-b116-52103dcea364" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="be6944f5-7642-44ad-953f-54307e373503" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributes>
+        <ownedOperations>
+          <operation Id="0202d53f-5712-430e-a4bc-dc5fce33bc82" name="ReadAndParseEmployeeData" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5bcb0129-4757-45f0-8f1e-416d577d6a50" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="98ac4fcf-76b5-4c40-b0b8-e513fe1ef9b5" direction="Return" isUnique="false">
+                  <elementDefinition Id="cd9c0520-0b40-4a2d-b9bf-1c8c275dc901" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="76fc2f33-8305-4c59-866c-f214cf94aebb" LastKnownName="IList&lt;MYOB.PayslipGenerator.DomainModel.Employee&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="623f3f31-bd39-4e28-bb38-20faa8bf6543" name="MYOB.PayslipGenerator.DomainModel.Employee" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="045645ce-5703-43b2-a9cc-ab6f7eb7bed9" />
+        <ownedAttributesInternal>
+          <property Id="ec7acb04-50ce-4a07-811c-87ed815eadd2" name="FirstName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9f2d8acf-e5ca-4f40-bc9a-f58202ad8144" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="be6944f5-7642-44ad-953f-54307e373503" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="e98b00b9-c087-497d-9388-dd3616f87078" name="LastName" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="6e2dd402-ad4f-438b-8f2b-4d2830259d2f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="5cd066c3-822a-4eca-82f7-aa012f3d47b2" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="9c52561d-eb4b-4047-a365-179c70e40a53" name="AnnualSalary" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c599fec2-96ed-4cba-9c32-93bdfe4efb62" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="062896a6-7b86-439f-ae59-41df5cc9df75" LastKnownName="decimal" />
+            </type_NamedElement>
+          </property>
+          <property Id="cb5096be-15ec-492a-b3cc-3c6181ef3f97" name="SuperRate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0ee44100-de95-48a5-b2a6-5045ac43d201" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="be6944f5-7642-44ad-953f-54307e373503" LastKnownName="string" />
+            </type_NamedElement>
+          </property>
+          <property Id="fefdf23c-8ebf-440c-9624-5ce6b63b18e1" name="PaymentStartDate" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d6718a94-50b2-444f-bd84-32679dcaf9fb" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="f8c5d079-982a-428f-a7ef-463c42e9d550" LastKnownName="DateTime" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="be6944f5-7642-44ad-953f-54307e373503" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="6ef2fc85-9405-4c91-8734-5485f526874f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="062896a6-7b86-439f-ae59-41df5cc9df75" name="decimal" isAbstract="false" isLeaf="false" cachedFullName="decimal">
+        <elementDefinition Id="75a50ca7-5aca-4918-9830-459f5ff676c9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f8c5d079-982a-428f-a7ef-463c42e9d550" name="DateTime" isAbstract="false" isLeaf="false" cachedFullName="DateTime">
+        <elementDefinition Id="9d2afcfc-e077-4168-a511-f51a44f8b60e" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="76fc2f33-8305-4c59-866c-f214cf94aebb" name="IList&lt;MYOB.PayslipGenerator.DomainModel.Employee&gt;" isAbstract="false" isLeaf="false" cachedFullName="IList&lt;MYOB.PayslipGenerator.DomainModel.Employee&gt;">
+        <elementDefinition Id="4823214f-f28c-4367-82b0-7e1ddfd1455e" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <Interface Id="08760aa0-679c-4796-b091-bc223db8fb7d" name="MYOB.PayslipGenerator.BusinessLogic.IEmployeeService" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3a2f80b9-08e4-4876-ace4-eec1e36c407f" />
+        <ownedOperations>
+          <operation Id="488aed3d-8cdb-4cd9-aff1-54b410b14e63" name="GetEmployees" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="320a22d1-5fd0-41de-a4ed-fed0decdf2fc" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="59ca2853-7703-4ea0-9198-f8301ea73186" direction="Return" isUnique="false">
+                  <elementDefinition Id="022a0e2f-9338-4a51-a629-5bc87c039184" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="76fc2f33-8305-4c59-866c-f214cf94aebb" LastKnownName="IList&lt;MYOB.PayslipGenerator.DomainModel.Employee&gt;" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperations>
+      </Interface>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="31415a3e-342a-4771-8dfd-ca8ed683d1fb" name="MYOB.PayslipGenerator.BusinessLogic.EmployeeViewModel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="eddca880-f6f6-47d4-8105-0f191dd65a0e" />
+        <ownedOperationsInternal>
+          <operation Id="7e373c19-fa6c-427b-8268-155350defdda" name="ReaadEmployeeInformation" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="006ab94a-f563-4b20-a87a-9c9f41e2e46d" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="5cd066c3-822a-4eca-82f7-aa012f3d47b2" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="6ef2fc85-9405-4c91-8734-5485f526874f" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="9e844c6d-0f32-4180-a027-2d7bbd943400" name="MYOB.PayslipGenerator.Research">
+    <elementDefinition Id="ff6d887d-1539-4176-9457-e52220a1cf17" />
+  </package>
+</logicalClassDesignerModel>
